@@ -1,0 +1,129 @@
+body{
+    background-image: url(../../assets/images/bg-main.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+.navbars{
+    background-color: transparent;
+    position: absolute;
+    height: 10vh;
+}
+.navbar{
+    background-color: transparent;
+    height: auto;
+    width: auto;
+}
+.formulario{
+    height: 100vh;
+}
+.formulario .login{
+    width: 400px;
+    height: 500px;
+    border-radius: 15px;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    border: 1px solid #fff;
+    color: #ffffff;
+}
+.formulario .login input{
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid #777;
+    color: #fff;
+}
+.formulario .login input:hover{
+    border: 1px solid #fff;
+}
+.formulario .login input:focus{
+    border: 1px solid #fff;
+}
+
+@media (max-width: 992px) {
+    *{
+        overflow: hidden;
+    }
+    body{
+        backdrop-filter: blur(2px);
+        backdrop-filter: brightness(.5);
+    }
+    .formulario .login{
+        width: 400px;
+        height: 500px;
+        border-radius: 15px;
+        background-color: transparent;
+        border: none;
+        color: #ffffff;
+        font-size: 2.5ex;
+    }
+    .formulario .login input{
+        background-color: #fff9;
+        border-radius: 10px;
+        border: 1px solid #777;
+        color: #000;
+    }
+}
+
+.contenedor{
+    height: 100vh;
+}
+.contenedor > .informacion{
+    height: 80vh;
+    width: 80vw;
+    background-color: #bbb9;
+}
+.list-group-item{
+    background-color: #fff6;
+}
+.fa-plus,
+.fa-trash,
+.fa-eye{
+    color: #112;
+    transition: all 200ms ease;
+}
+.fa-plus:hover{
+    color: #3d3;
+    cursor: pointer;
+}
+.fa-eye:hover{
+    color: #17f;
+    cursor: pointer;
+}
+.fa-trash:hover{
+    color: #b00;
+    cursor: pointer;
+}
+.busqueda input{
+    width: 15vw;
+    transition: all 400ms ease;
+}
+.busqueda input:hover{
+    width: 17vw;
+}
+.busqueda input:focus{
+    width: 17vw;
+}
+.logout{
+    margin-right: 10px;
+    font-size: 2em;
+}
+.cerrar{
+    border: none;
+    background-color: transparent; 
+    color: #fff; 
+    text-align: center;
+}
+@media (max-width: 992px) {
+    body{
+        backdrop-filter: blur(2px);
+        backdrop-filter: brightness(.5);
+    }
+    .contenedor > .informacion{
+        height: 80vh;
+        width: auto;
+        background-color: #bbb9;
+    }
+    .busqueda input{
+        width: auto;
+        transition: all 400ms ease;
+    }
+}
