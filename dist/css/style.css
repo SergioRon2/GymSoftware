@@ -10,11 +10,6 @@ body{
     display: flex;
     align-items: center;
 }
-.navbar{
-    background-color: transparent;
-    height: auto;
-    width: auto;
-}
 .formulario{
     height: 100vh;
 }
@@ -65,6 +60,13 @@ body{
     }
 }
 
+/* main  */
+
+.navbar{
+    background-color: transparent;
+    height: auto;
+    width: auto;
+}
 .contenedor{
     height: 100vh;
 }
