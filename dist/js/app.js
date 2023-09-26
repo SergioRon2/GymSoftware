@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
       if (mail.value === 'admin@admin.com' && password.value === 'admin12345') {
         window.location.href = 'page-main.html';
-        alert('Bienvenido a GymSoftware!')
+        alert('Redireccionando a la pagina principal., bienvenido a GymSoftware!')
       } else{
         window.location.href = 'index.html';
       }

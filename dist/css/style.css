@@ -71,7 +71,7 @@ body{
     height: 100vh;
 }
 .contenedor > .informacion{
-    height: 80vh;
+    height: 85vh;
     width: 90vw;
     background-color: #bbb9;
     padding: 30px;
@@ -126,7 +126,8 @@ body{
         padding: 10px;
     }
     .contenedor > .informacion{
-        height: 80vh;
+        margin-top: -40px;
+        height: 85vh;
         width: auto;
         background-color: transparent;
     }
@@ -140,6 +141,6 @@ body{
         width: auto;
     }
     .busqueda input:focus{
-        width: 17vw;
+        width: auto;
     }
 }
