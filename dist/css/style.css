@@ -74,6 +74,7 @@ body{
     height: 80vh;
     width: 90vw;
     background-color: #bbb9;
+    padding: 30px;
 }
 .list-group-item{
     background-color: #fff6;
@@ -121,10 +122,19 @@ body{
         backdrop-filter: blur(2px);
         backdrop-filter: brightness(.5);
     }
+    .contenedor{
+        padding: 10px;
+    }
     .contenedor > .informacion{
         height: 80vh;
         width: auto;
-        background-color: #bbb9;
+        background-color: transparent;
+    }
+    .contenedor .informacion > .list-group-item{
+        background-color: #fffd;
+    }
+    p{
+        font-weight: bold;
     }
     .busqueda input{
         width: auto;
