@@ -71,7 +71,7 @@ body{
     height: 100vh;
 }
 .contenedor > .informacion{
-    height: 85vh;
+    height: 80vh;
     width: 90vw;
     background-color: #bbb9;
     padding: 30px;
@@ -142,5 +142,8 @@ body{
     }
     .busqueda input:focus{
         width: auto;
+    }
+    .flex-navbar{
+        flex-direction: column;
     }
 }
