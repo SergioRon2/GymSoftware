@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
       event.preventDefault(); // Evita que el formulario se envíe por defecto
   
       if (mail.value === 'admin@admin.com' && password.value === 'admin12345') {
-        window.location.href = 'main.html';
+        window.location.href = 'page-main.html';
+        alert('Bienvenido a GymSoftware!')
       } else{
         window.location.href = 'index.html';
       }
