@@ -1,7 +1,7 @@
 body{
     background-image: url(../../assets/images/bg-main.jpg);
     background-size: cover;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .navbars{
     background-color: transparent;
@@ -37,7 +37,7 @@ body{
 
 @media (max-width: 992px) {
     *{
-        overflow: hidden;
+        overflow: visible;
     }
     body{
         backdrop-filter: blur(2px);
@@ -82,15 +82,10 @@ body{
 .list-group-item p{
     user-select: none;
 }
-.fa-plus,
 .fa-trash,
 .fa-eye{
     color: #112;
     transition: all 200ms ease;
-}
-.fa-plus:hover{
-    color: #3d3;
-    cursor: pointer;
 }
 .fa-eye:hover{
     color: #17f;
@@ -116,6 +111,15 @@ body{
     background-color: transparent; 
     color: #fff; 
     text-align: center;
+}
+.link-nuevo-miembro a,
+.link-nuevo-miembro i{
+    color:#002;
+    transition: all 200ms ease;
+}
+.link-nuevo-miembro a:hover,
+.link-nuevo-miembro i:hover{
+    color:#3d3;
 }
 @media (max-width: 992px) {
     body{
@@ -146,4 +150,8 @@ body{
     .flex-navbar{
         flex-direction: column;
     }
+}
+
+.tabla-miembros{
+    backdrop-filter: blur(20px);
 }

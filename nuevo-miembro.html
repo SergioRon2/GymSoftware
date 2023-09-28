@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymSoftware - Ingresar Nuevo Miembro</title>
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <script src="https://kit.fontawesome.com/ce169708bd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid d-flex flex-navbar p-2">
+          <a class="navbar-brand text-light mx-3" href="page-main.html">GymSoftware</a>
+          <div class="col d-flex flex-column" id="navbarSupportedContent">
+              <div class="d-flex justify-content-end p-3 text-light">
+                <a href="page-main.html" class="text-decoration-none">
+                    <button class="cerrar d-flex align-items-center"><i class="fa-solid text-light fa-right-from-bracket logout"></i><p class="m-auto">Regresar</p></button>
+                </a>
+              </div>
+          </div>
+      </div>
+    </nav>  
+    <div class="p-5">
+      <div class="container mt-4 tabla-miembros card bg-transparent border-light p-3">
+        <h1 class="mb-4 text-light">Ingresar Nuevo Miembro</h1>
+        <form>
+            <div class="mb-3">
+                <label for="nombre" class="form-label text-light">Nombre:</label>
+                <input type="text" class="form-control bg-transparent text-light" id="nombre" name="nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="correo" class="form-label text-light">Correo Electrónico:</label>
+                <input type="email" class="form-control bg-transparent text-light" id="correo" name="correo" required>
+            </div>
+            <div class="mb-3">
+                <label for="telefono" class="form-label text-light">Teléfono:</label>
+                <input type="tel" class="form-control bg-transparent text-light" id="telefono" name="telefono">
+            </div>
+            <div class="mb-3">
+                <label for="fecha_nacimiento" class="form-label text-light">Fecha de Nacimiento:</label>
+                <input type="date" class="form-control bg-transparent text-light" id="fecha_nacimiento" name="fecha_nacimiento">
+            </div>
+            <div class="mb-3">
+                <label for="direccion" class="form-label text-light">Dirección:</label>
+                <textarea class="form-control bg-transparent text-light" id="direccion" name="direccion" rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="fecha_ingreso" class="form-label text-light">Fecha de Ingreso:</label>
+                <input type="date" class="form-control bg-transparent text-light" id="fecha_ingreso" name="fecha_ingreso">
+            </div>
+            <div class="p-4">
+              <button type="submit" class="btn btn-dark border-light d-flex m-auto">Guardar</button>
+            </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="dist/js/app.js"></script>
+</body>
+</html>
