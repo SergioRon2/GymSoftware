@@ -57,6 +57,7 @@ body{
     }
     .sticky-1{
         border: none;
+        position: relative;
     }
 }
 
@@ -112,13 +113,11 @@ body{
     color: #fff; 
     text-align: center;
 }
-.link-nuevo-miembro a,
-.link-nuevo-miembro i{
+.link-nuevo-miembro p{
     color:#002;
     transition: all 200ms ease;
 }
-.link-nuevo-miembro a:hover,
-.link-nuevo-miembro i:hover{
+.link-nuevo-miembro p:hover{
     color:#3d3;
 }
 .sticky-1{
@@ -162,6 +161,7 @@ body{
     }
     .sticky-1{
         border: none;
+        position: relative;
     }
 }
 
@@ -179,5 +179,6 @@ body{
     }
     .sticky-1{
         border: none;
+        position: relative;
     }
 }
