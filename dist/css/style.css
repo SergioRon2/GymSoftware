@@ -2,7 +2,7 @@ body{
     background-image: url(../../assets/images/bg-main.jpg);
     background-size: cover;
     overflow-x: hidden;
-    transition: all 400ms ease-in;
+    transition: all 300ms ease-in;
 }
 .navbars{
     background-color: transparent;
@@ -176,9 +176,11 @@ body{
     }
 }
 
-.tabla-miembros{
+.form-miembros{
     backdrop-filter: blur(20px);
     background-color: #0007;
+    border: 1px solid #333;
+    transition: all 400ms ease-in;
 }
 
 @media (max-width: 992px) {
@@ -192,5 +194,26 @@ body{
     .sticky-1{
         border: none;
         position: relative;
+    }
+}
+
+.detalles{
+    color: #fff;
+    max-height: 80vh;
+}
+.brightness-value{    
+    /* cabe resaltar que esto es para cambiar el brillo en la pag datos-miembro.html */
+    backdrop-filter: brightness(.2);
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.form-label{
+    font-weight: bold;
+}
+
+@media (max-width: 992px) {
+    *{
+        overflow-x: hidden;
     }
 }

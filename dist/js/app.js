@@ -43,7 +43,7 @@ let body = document.getElementById('body');
 let blur = document.getElementById('blur');
 
 formulario.addEventListener('mouseover', function() {
-  body.style.backdropFilter = 'brightness(.5)';
+  body.style.backdropFilter = 'brightness(.3)';
 });
 
 formulario.addEventListener('mouseout', function() {
