@@ -40,7 +40,6 @@ filtros.forEach(filtro => {
 
 let formulario = document.getElementById('formulario');
 let body = document.getElementById('body');
-let blur = document.getElementById('blur');
 
 formulario.addEventListener('mouseover', function() {
   body.style.backdropFilter = 'brightness(.3)';

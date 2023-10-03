@@ -76,7 +76,7 @@ body{
     height: 100vh;
 }
 .contenedor > .informacion{
-    height: 80vh;
+    height: 85vh;
     width: 90vw;
     background-color: #0009;
     padding: 30px;
@@ -149,11 +149,20 @@ body{
     }
     .contenedor{
         padding: 10px;
+        width: auto;
     }
     .contenedor > .informacion{
         height: 85vh;
         width: auto;
+        margin-top: -20px;
         background-color: transparent;
+        border: 1px solid transparent;
+    }
+    .contenedor > .informacion:hover{
+        border: 1px solid transparent;
+    }
+    .contenedor > .informacion > .overflow-y-scroll{
+        width: 100%;
     }
     .contenedor .informacion > .list-group-item{
         background-color: #fffd;
