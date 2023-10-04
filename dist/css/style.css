@@ -53,6 +53,9 @@ body{
         color: #ffffff;
         font-size: 2.5ex;
     }
+    .formulario .login:hover{
+        border: 1px solid transparent;
+    }
     .formulario .login input{
         background-color: #fff9;
         border-radius: 10px;
