@@ -1,23 +1,18 @@
+const filtro = document.getElementById('filtro');
+const elementos = document.querySelectorAll('.list-group-item');
 
-let clientes = document.querySelectorAll('.list-group-item');
-let filtros = document.querySelectorAll('.form-control');
-  
-filtros.forEach(filtro => {
-    filtro.addEventListener('input', function() {
-        let filtroTexto = filtro.value.toLowerCase();
-  
-        clientes.forEach(cliente => {
-            let clienteTexto = cliente.textContent.toLowerCase();
-  
-            if (clienteTexto.includes(filtroTexto)) {
-                cliente.style.display = 'block';
+filtro.addEventListener('input', function () {
+    const filtroTexto = filtro.value.trim().toLowerCase();
+
+        elementos.forEach(elemento => {
+            const contenido = elemento.textContent.trim().toLowerCase();
+            if (contenido.includes(filtroTexto)) {
+                elemento.style.display = 'block';
             } else {
-                cliente.style.display = 'none';
+                elemento.style.display = 'none';
             }
         });
-    });
 });
-
 
 let formulario = document.getElementById('formulario');
 let body = document.getElementById('body');
