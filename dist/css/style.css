@@ -78,10 +78,15 @@ body{
 .dropdown{
     margin: auto 10px;
 }
+.dropdown > .dropdown-toggle{
+    background-color: #0008;
+    color: #fff;
+    border: 1px solid white;
+}
 .contenedor{
     height: 100vh;
 }
-.contenedor > .informacion{
+.contenedor > .informacion{ 
     height: 85vh;
     width: 98vw;
     background-color: #0009;
@@ -135,7 +140,7 @@ body{
     transition: all 200ms ease;
 }
 .link-nuevo-miembro p:hover{
-    color:#3d3;
+    color:#3b3;
 }
 .sticky-1{
     position: sticky;
@@ -231,4 +236,31 @@ body{
     *{
         overflow-x: hidden;
     }
+}
+
+/* inventario  */
+
+.table {
+    background-color: #444;
+    color: #fff;
+}
+.table th {
+    background-color: #222;
+}
+
+
+.link-nuevo-articulo p{
+    color:#eef;
+    transition: all 200ms ease;
+}
+.link-nuevo-articulo p:hover{
+    color:#3b3;
+}
+.fa-edit{
+    color: #aaa;
+    transition: all 200ms ease;
+}
+.fa-edit:hover{
+    color: #17f;
+    cursor: pointer;
 }

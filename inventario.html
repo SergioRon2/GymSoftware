@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymSoftware - Inventario</title>
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="dist/css/style-page-y.css">
+    <style>
+    </style>
+    <script src="https://kit.fontawesome.com/ce169708bd.js" crossorigin="anonymous"></script>
+    <script src="dist/js/bootstrap.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="dist/js/app.js"></script>
+</head>
+<body style="backdrop-filter: brightness(.3);">
+    <nav class="navbar navbar-expand-lg sticky-1">
+        <div class="container-fluid d-flex flex-navbar p-2">
+            <a class="navbar-brand text-light mx-3" href="inventario.html">GymSoftware</a>
+            <div class="col d-flex flex-row" id="navbarSupportedContent">
+                <form class="d-flex m-auto p-3 busqueda" role="search">
+                    <input class="form-control me-2" id="filtro" type="search" placeholder="Filtro de búsqueda" aria-label="Search">
+                </form>
+                <!-- <div class="d-flex justify-content-end p-1 text-light">
+                    <a href="index.html" class="text-decoration-none">
+                        <button class="cerrar d-flex align-items-center"><i class="fa-solid text-light fa-right-from-bracket logout"></i><p class="m-auto">Cerrar</p></button>
+                    </a>
+                    
+                </div> -->
+                <!-- Example split danger button -->
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown button
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item active" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="contenedor row d-flex justify-content-center align-items-start">
+        <div class="informacion col-auto d-flex flex-column">
+            <div class="d-flex align-items-center link-nuevo-articulo justify-content-end">
+                <a href="nuevo-articulo.html" class="d-flex text-decoration-none align-items-center mx-2 p-2"><p><i class="fas fa-plus mx-2"></i>Nuevo artículo</p></a>
+            </div>
+            <div class="col overflow-y-scroll">
+                <table class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre del Artículo</th>
+                            <th>Cantidad</th>
+                            <th>Descripción</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Mancuernas</td>
+                            <td>20</td>
+                            <td>Juego de mancuernas de 5 a 50 libras.</td>
+                            <td>
+                                <a class="text-decoration-none" href="editar-articulo.html"><i class="fas fa-edit mx-2"></i></a>
+                                <a class="text-decoration-none" href="#"><i class="fas fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Cintas de Correr</td>
+                            <td>5</td>
+                            <td>Cintas de correr profesionales.</td>
+                            <td>
+                                <a class="text-decoration-none" href="editar-articulo.html"><i class="fas fa-edit mx-2"></i></a>
+                                <a class="text-decoration-none" href="#"><i class="fas fa-trash"></i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script>
+        const filtro = document.getElementById('filtro');
+        const filas = document.querySelectorAll('tbody tr');
+
+        filtro.addEventListener('input', function () {
+            const filtroTexto = filtro.value.trim().toLowerCase();
+
+            filas.forEach((fila) => {
+                const contenido = fila.textContent.trim().toLowerCase();
+                if (contenido.includes(filtroTexto)) {
+                    fila.style.display = 'table-row';
+                } else {
+                    fila.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
