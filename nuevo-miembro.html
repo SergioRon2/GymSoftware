@@ -62,6 +62,20 @@
         </div>
     </div>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let loading = document.querySelector(".btn-dark");
+            let contenido = document.querySelector(".content");
+
+            window.addEventListener("load", function() {
+                // Cuando la página se carga completamente, oculta la animación de carga.
+                loading.style.display = "none";
+                contenido.style.display = "block";
+            });
+        });
+    </script>
+
+
     <script src="dist/js/bootstrap.min.js"></script>
     <script src="dist/js/bootstrap.js"></script>
     <script src="dist/js/app.js"></script>

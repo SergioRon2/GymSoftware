@@ -9,13 +9,17 @@
     <link rel="stylesheet" href="dist/css/style-index-x.css">
 </head>
 <body id="body" style="backdrop-filter: brightness(.9);">
-  <div class="loader"></div>
+  <button class="btn btn-dark" type="button" disabled>
+    <span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
+    <span role="status">Loading...</span>
+  </button>
   <nav class="navbars navbar-expand-lg sticky-1">
       <div class="container-fluid">
         <a class="navbar-brand text-light mx-3" href="index.html">GymSoftware</a>
       </div>
   </nav>
-  <div class="formulario row d-flex justify-content-center align-items-center" id="blur">
+  <div class="content">
+    <div class="formulario row d-flex justify-content-center align-items-center" id="blur">
       <div class="login col-auto d-flex card p-5" id="formulario">
           <form>
               <div class="mb-3">
@@ -36,6 +40,21 @@
           </form>
       </div>
   </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let loading = document.querySelector(".btn-dark");
+        let contenido = document.querySelector(".content");
+
+        window.addEventListener("load", function() {
+            // Cuando la página se carga completamente, oculta la animación de carga.
+            loading.style.display = "none";
+            contenido.style.display = "block";
+        });
+    });
+  </script>
+
   <script src="dist/js/bootstrap.min.js"></script>
   <script src="dist/js/app.js"></script>
 </body>

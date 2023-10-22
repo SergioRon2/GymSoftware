@@ -9,7 +9,10 @@
     <script src="https://kit.fontawesome.com/ce169708bd.js" crossorigin="anonymous"></script>
 </head>
 <body class="brightness-value" style="background-image: url(assets/images/bg-main-4.jpg);">
-    <div class="loader"></div>
+    <button class="btn btn-dark" type="button" disabled>
+        <span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
+        <span role="status">Loading...</span>
+    </button>
     <nav class="navbar navbar-expand-lg sticky-1">
       <div class="container-fluid d-flex flex-navbar p-2">
           <a class="navbar-brand text-light mx-3" href="page-main.html">GymSoftware</a>
@@ -22,43 +25,58 @@
           </div>
       </div>
     </nav>  
-    <div class="container detalles mx-5 mt-4">
-        <h1 class="mb-4">Detalles del Miembro</h1>
-        <div class="col">
-            <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre:</label>
-                <p id="nombre">Jair Humberto Montes Peñuela</p>
+    <div class="content">
+        <div class="container detalles mx-5 mt-4">
+            <h1 class="mb-4">Detalles del Miembro</h1>
+            <div class="col">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre:</label>
+                    <p id="nombre">Jair Humberto Montes Peñuela</p>
+                </div>
+                <div class="mb-3">
+                    <label for="correo" class="form-label">Correo Electrónico:</label>
+                    <p id="correo">jair@example.com</p>
+                </div>
             </div>
             <div class="mb-3">
-                <label for="correo" class="form-label">Correo Electrónico:</label>
-                <p id="correo">jair@example.com</p>
+                <label for="telefono" class="form-label">Teléfono:</label>
+                <p id="telefono">123-456-7890</p>
             </div>
-        </div>
-        <div class="mb-3">
-            <label for="telefono" class="form-label">Teléfono:</label>
-            <p id="telefono">123-456-7890</p>
-        </div>
-        <div class="mb-3">
-            <label for="fecha_nacimiento" class="form-label">Fecha de Nacimiento:</label>
-            <p id="fecha_nacimiento">1990-01-15</p>
-        </div>
-        <div class="mb-3">
-            <label for="direccion" class="form-label">Dirección:</label>
-            <p id="direccion">123 Calle Principal, Ciudad</p>
-        </div>
-        <div class="mb-3">
-            <label for="fecha_ingreso" class="form-label">Fecha de Ingreso:</label>
-            <p id="fecha_ingreso">2023-09-15</p>
-        </div>
-        <div class="mb-3">
-            <label for="fecha_ingreso" class="form-label">Fecha de Finalizacion:</label>
-            <p id="fecha_ingreso">2023-10-15</p>
-        </div>
-        <div class="col mb-5">
-            <a href="lista_miembros.html" class="btn btn-dark border-light">Editar</a>
-            <a href="page-main.html" class="btn btn-dark border-light mx-2">Volver a la Lista</a>
+            <div class="mb-3">
+                <label for="fecha_nacimiento" class="form-label">Fecha de Nacimiento:</label>
+                <p id="fecha_nacimiento">1990-01-15</p>
+            </div>
+            <div class="mb-3">
+                <label for="direccion" class="form-label">Dirección:</label>
+                <p id="direccion">123 Calle Principal, Ciudad</p>
+            </div>
+            <div class="mb-3">
+                <label for="fecha_ingreso" class="form-label">Fecha de Ingreso:</label>
+                <p id="fecha_ingreso">2023-09-15</p>
+            </div>
+            <div class="mb-3">
+                <label for="fecha_ingreso" class="form-label">Fecha de Finalizacion:</label>
+                <p id="fecha_ingreso">2023-10-15</p>
+            </div>
+            <div class="col mb-5">
+                <a href="lista_miembros.html" class="btn btn-dark border-light">Editar</a>
+                <a href="page-main.html" class="btn btn-dark border-light mx-2">Volver a la Lista</a>
+            </div>
         </div>
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let loading = document.querySelector(".btn-dark");
+            let contenido = document.querySelector(".content");
+
+            window.addEventListener("load", function() {
+                // Cuando la página se carga completamente, oculta la animación de carga.
+                loading.style.display = "none";
+                contenido.style.display = "block";
+            });
+        });
+    </script>
 
     <script src="dist/js/bootstrap.min.js"></script>
     <script src="dist/js/app.js"></script>
