@@ -1,0 +1,3 @@
+Tengo observaciones que aclarar, la primera es que todos los archivos html trabajan con su codigo js en su etiqueta script, algunos comandos no funcionaban si toddos los html dependian de un solo js.
+
+entonces en app.js solo esta la funcion para el brillo del body al momento de fijar el mouse en el formulario
