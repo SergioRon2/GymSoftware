@@ -4,6 +4,20 @@ body{
     overflow-x: hidden;
     transition: all 300ms ease-in;
 }
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.btn-dark{
+    position: fixed;
+    margin: 92vh 10px;
+    z-index: 9999;
+    display: block;
+}
+
+
 .navbars{
     background-color: transparent;
     position: absolute;

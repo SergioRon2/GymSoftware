@@ -9,7 +9,12 @@
     <script src="https://kit.fontawesome.com/ce169708bd.js" crossorigin="anonymous"></script>
 </head>
 <body style="background-image: url(assets/images/bg-main-3.jpg);">
-    <nav class="navbar navbar-expand-lg sticky-1">
+    <button class="btn btn-dark loader" type="button" disabled>
+        <span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span>
+        <span role="status">Loading...</span>
+    </button>
+    <div class="content">
+            <nav class="navbar navbar-expand-lg sticky-1">
       <div class="container-fluid d-flex flex-navbar p-2">
           <a class="navbar-brand text-light mx-3" href="page-main.html">GymSoftware</a>
           <div class="col d-flex flex-column" id="navbarSupportedContent">
@@ -50,10 +55,11 @@
                 <input type="date" class="form-control bg-transparent text-light" id="fecha_ingreso" name="fecha_ingreso">
             </div>
             <div class="p-4">
-              <button type="submit" class="btn btn-dark border-light d-flex m-auto">Guardar</button>
+              <button type="submit" class="btn btn-light border-dark d-flex m-auto">Guardar</button>
             </div>
         </form>
       </div>
+    </div>
     </div>
 
     <script src="dist/js/bootstrap.min.js"></script>
