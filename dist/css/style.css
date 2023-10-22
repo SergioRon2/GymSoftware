@@ -6,6 +6,16 @@ body{
     transition: all 300ms ease-in;
 }
 
+/* estilos del swal */
+
+.swal2-confirm {
+    background-color: #f00;
+    color: #fff; 
+  }
+  
+
+/* estilos del swal  */
+
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
@@ -83,6 +93,13 @@ body{
     .sticky-1{
         border: none;
         position: relative;
+    }
+
+    .btn-dark{
+        position: fixed;
+        margin: 50vh 40vw;
+        z-index: 9999;
+        display: block;
     }
 }
 

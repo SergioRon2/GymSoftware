@@ -12,6 +12,8 @@
     <script src="https://kit.fontawesome.com/ce169708bd.js" crossorigin="anonymous"></script>
     <script src="dist/js/bootstrap.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.7/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.7/dist/sweetalert2.all.min.js"></script>
 </head>
 <body style="background-image: url(assets/images/bg-main-5.jpg); backdrop-filter: blur(10px);">
     <button class="btn btn-dark" type="button" disabled>
@@ -71,7 +73,7 @@
                                 <td>Juego de mancuernas de 5 a 50 libras.</td>
                                 <td>
                                     <a class="text-decoration-none" href="editar-articulo.html"><i class="fas fa-edit mx-2"></i></a>
-                                    <a class="text-decoration-none" href="#"><i class="fas fa-trash"></i></a>
+                                    <a class="text-decoration-none" href="#"><i class="fas fa-trash" id="boton-eliminar"></i></a>
                                 </td>
                             </tr>
                             <tr>
@@ -81,7 +83,7 @@
                                 <td>Cintas de correr profesionales.</td>
                                 <td>
                                     <a class="text-decoration-none" href="editar-articulo.html"><i class="fas fa-edit mx-2"></i></a>
-                                    <a class="text-decoration-none" href="#"><i class="fas fa-trash"></i></a>
+                                    <a class="text-decoration-none" href="#"><i class="fas fa-trash" id="boton-eliminar"></i></a>
                                 </td>
                             </tr>
                             <tr>
@@ -91,7 +93,7 @@
                                 <td>Colchonetas para ejercicios de yoga y pilates.</td>
                                 <td>
                                     <a class="text-decoration-none" href="editar-articulo.html"><i class="fas fa-edit mx-2"></i></a>
-                                    <a class="text-decoration-none" href="#"><i class="fas fa-trash"></i></a>
+                                    <a class="text-decoration-none" href="#"><i class="fas fa-trash" id="boton-eliminar"></i></a>
                                 </td>
                             </tr>
                             <tr>
@@ -101,7 +103,7 @@
                                 <td>Cinturones de levantamiento de pesas.</td>
                                 <td>
                                     <a class="text-decoration-none" href="editar-articulo.html"><i class="fas fa-edit mx-2"></i></a>
-                                    <a class="text-decoration-none" href="#"><i class="fas fa-trash"></i></a>
+                                    <a class="text-decoration-none" href="#"><i class="fas fa-trash" id="boton-eliminar"></i></a>
                                 </td>
                             </tr>
                             <tr>
@@ -111,7 +113,7 @@
                                 <td>Bandas elásticas de resistencia para entrenamientos variados.</td>
                                 <td>
                                     <a class="text-decoration-none" href="editar-articulo.html"><i class="fas fa-edit mx-2"></i></a>
-                                    <a class="text-decoration-none" href="#"><i class="fas fa-trash"></i></a>
+                                    <a class="text-decoration-none" href="#"><i class="fas fa-trash" id="boton-eliminar"></i></a>
                                 </td>
                             </tr>
                             <tr>
@@ -121,7 +123,7 @@
                                 <td>Bancos de pesas ajustables para ejercicios de banco y mancuernas.</td>
                                 <td>
                                     <a class="text-decoration-none" href="editar-articulo.html"><i class="fas fa-edit mx-2"></i></a>
-                                    <a class="text-decoration-none" href="#"><i class="fas fa-trash"></i></a>
+                                    <a class="text-decoration-none" href="#"><i class="fas fa-trash" id="boton-eliminar"></i></a>
                                 </td>
                             </tr>
                             <tr>
@@ -131,7 +133,7 @@
                                 <td>Balones medicinales para entrenamientos de fuerza y ​​equilibrio.</td>
                                 <td>
                                     <a class="text-decoration-none" href="editar-articulo.html"><i class="fas fa-edit mx-2"></i></a>
-                                    <a class="text-decoration-none" href="#"><i class="fas fa-trash"></i></a>
+                                    <a class="text-decoration-none" href="#"><i class="fas fa-trash" id="boton-eliminar"></i></a>
                                 </td>
                             </tr>
                             <tr>
@@ -141,7 +143,7 @@
                                 <td>Barras de peso olímpicas de alta calidad.</td>
                                 <td>
                                     <a class="text-decoration-none" href="editar-articulo.html"><i class="fas fa-edit mx-2"></i></a>
-                                    <a class="text-decoration-none" href="#"><i class="fas fa-trash"></i></a>
+                                    <a class="text-decoration-none" href="#"><i class="fas fa-trash" id="boton-eliminar"></i></a>
                                 </td>
                             </tr>
                             <tr>
@@ -151,7 +153,7 @@
                                 <td>Kettlebells de diferentes pesos para entrenamientos funcionales.</td>
                                 <td>
                                     <a class="text-decoration-none" href="editar-articulo.html"><i class="fas fa-edit mx-2"></i></a>
-                                    <a class="text-decoration-none" href="#"><i class="fas fa-trash"></i></a>
+                                    <a class="text-decoration-none" href="#"><i class="fas fa-trash" id="boton-eliminar"></i></a>
                                 </td>
                             </tr>
                             <tr>
@@ -161,7 +163,7 @@
                                 <td>Plataformas de salto para ejercicios de pliometría.</td>
                                 <td>
                                     <a class="text-decoration-none" href="editar-articulo.html"><i class="fas fa-edit mx-2"></i></a>
-                                    <a class="text-decoration-none" href="#"><i class="fas fa-trash"></i></a>
+                                    <a class="text-decoration-none" href="#"><i class="fas fa-trash" id="boton-eliminar"></i></a>
                                 </td>
                             </tr>
                             <tr>
@@ -171,7 +173,7 @@
                                 <td>Ruedas abdominales para entrenamientos de abdominales y core.</td>
                                 <td>
                                     <a class="text-decoration-none" href="editar-articulo.html"><i class="fas fa-edit mx-2"></i></a>
-                                    <a class="text-decoration-none" href="#"><i class="fas fa-trash"></i></a>
+                                    <a class="text-decoration-none" href="#"><i class="fas fa-trash" id="boton-eliminar"></i></a>
                                 </td>
                             </tr>
                             <tr>
@@ -181,7 +183,7 @@
                                 <td>Cuerdas de batalla para entrenamientos de alta intensidad.</td>
                                 <td>
                                     <a class="text-decoration-none" href="editar-articulo.html"><i class="fas fa-edit mx-2"></i></a>
-                                    <a class="text-decoration-none" href="#"><i class="fas fa-trash"></i></a>
+                                    <a class="text-decoration-none" href="#"><i class="fas fa-trash" id="boton-eliminar"></i></a>
                                 </td>
                             </tr>
                             <tr>
@@ -191,7 +193,7 @@
                                 <td>Steps ajustables para ejercicios de step aeróbico.</td>
                                 <td>
                                     <a class="text-decoration-none" href="editar-articulo.html"><i class="fas fa-edit mx-2"></i></a>
-                                    <a class="text-decoration-none" href="#"><i class="fas fa-trash"></i></a>
+                                    <a class="text-decoration-none" href="#"><i class="fas fa-trash" id="boton-eliminar"></i></a>
                                 </td>
                             </tr>
                             <tr>
@@ -201,7 +203,7 @@
                                 <td>Guantes acolchados para levantamiento de pesas.</td>
                                 <td>
                                     <a class="text-decoration-none" href="editar-articulo.html"><i class="fas fa-edit mx-2"></i></a>
-                                    <a class="text-decoration-none" href="#"><i class="fas fa-trash"></i></a>
+                                    <a class="text-decoration-none" href="#"><i class="fas fa-trash" id="boton-eliminar"></i></a>
                                 </td>
                             </tr>
                             <tr>
@@ -211,7 +213,7 @@
                                 <td>Espejos de pared para controlar la forma durante el ejercicio.</td>
                                 <td>
                                     <a class="text-decoration-none" href="editar-articulo.html"><i class="fas fa-edit mx-2"></i></a>
-                                    <a class="text-decoration-none" href="#"><i class="fas fa-trash"></i></a>
+                                    <a class="text-decoration-none" href="#"><i class="fas fa-trash" id="boton-eliminar"></i></a>
                                 </td>
                             </tr>
                             <tr>
@@ -221,7 +223,7 @@
                                 <td>Cinturones para correr con bolsillos para dispositivos móviles.</td>
                                 <td>
                                     <a class="text-decoration-none" href="editar-articulo.html"><i class="fas fa-edit mx-2"></i></a>
-                                    <a class="text-decoration-none" href="#"><i class="fas fa-trash"></i></a>
+                                    <a class="text-decoration-none" href="#"><i class="fas fa-trash" id="boton-eliminar"></i></a>
                                 </td>
                             </tr>                                                
                         </tbody>
@@ -255,6 +257,24 @@
                 // Cuando la página se carga completamente, oculta la animación de carga.
                 loading.style.display = "none";
                 contenido.style.display = "block";
+            });
+        });
+
+
+        document.getElementById('boton-eliminar').addEventListener('click', function() {
+            Swal.fire({
+                title: '¿Estás seguro?',
+                text: '¡No podrás deshacer esta acción!',
+                icon: 'info',
+                showCancelButton: true,
+                confirmButtonText: 'Sí, eliminarlo',
+                cancelButtonText: 'Cancelar'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                Swal.fire('¡Eliminado!', 'El elemento ha sido eliminado.', 'success');
+                } else if (result.dismiss === Swal.DismissReason.cancel) {
+                Swal.fire('Cancelado', 'La acción ha sido cancelada.', 'error');
+                }
             });
         });
     </script>
