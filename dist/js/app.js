@@ -12,6 +12,6 @@ formulario.addEventListener('mouseout', function() {
 
 window.addEventListener("load", function() {
   // Cuando la página se carga completamente, oculta la animación de carga.
-  document.querySelector(".loader").style.display = "none";
+  document.querySelector(".btn-dark").style.display = "none";
   document.querySelector(".content").style.display = "block";
 });
