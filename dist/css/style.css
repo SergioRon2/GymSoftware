@@ -17,6 +17,9 @@ body{
     display: block;
 }
 
+.content{
+    display: none;
+}
 
 .navbars{
     background-color: transparent;
