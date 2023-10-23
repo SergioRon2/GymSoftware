@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="dist/css/style.css">
     <link rel="stylesheet" href="dist/css/style-index-x.css">
     <script src="https://kit.fontawesome.com/ce169708bd.js" crossorigin="anonymous"></script>
-    <script src="dist/js/bootstrap.js"></script>
     <script src="dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.7/dist/sweetalert2.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.7/dist/sweetalert2.all.min.js"></script>
@@ -33,7 +32,7 @@
                 </div> -->
                 <!-- Example split danger button -->
                 <div class="dropdown">
-                    <button id="id-del-boton-dropdown" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button id="id-del-boton-dropdown" class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                       <i class="fas fa-list"></i>
                     </button>
                     <ul class="dropdown-menu">
@@ -182,6 +181,23 @@
     </div>
     <script>
 
+
+
+        const swalShown = localStorage.getItem('swalShown');
+        if (!swalShown) {
+        // El SweetAlert no se ha mostrado, así que lo mostramos
+        Swal.fire({
+            title: '¡Bienvenido a GymSoftware!',
+            text: 'Gracias por usar nuestra plataforma.',
+            icon: 'info',
+        });
+
+        // Luego, establece una bandera en el almacenamiento local para indicar que se ha mostrado
+        localStorage.setItem('swalShown', 'true');
+        }
+
+
+
         // SCRIPT DEL FILTRO
         // Obtenemos los elementos de la lista
         const elementos = document.querySelectorAll('.list-group-item');
@@ -194,7 +210,6 @@
             elementos.forEach(elemento => {
                 const texto = elemento.textContent.toLowerCase();
 
-                // Comprobamos si el texto del elemento incluye el filtro
                 if (texto.includes(filtroTexto)) {
                     elemento.style.display = 'block';
                 } else {
@@ -209,7 +224,7 @@
             let contenido = document.querySelector(".content");
 
             window.addEventListener("load", function() {
-                // Cuando la página se carga completamente, oculta la animación de carga.
+                // Cuando la página se carga completamente, se oculta la animación de carga.
                 loading.style.display = "none";
                 contenido.style.display = "block";
             });
